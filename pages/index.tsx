@@ -14,7 +14,7 @@ export default function Home() {
       <HeadSeo
         title={"Learn to build unique charts with React"}
         seoDescription={
-          "The React Graph Gallery displays hundreds of charts made with React, always with explanation and reproduciible code"
+          "The React Graph Gallery displays hundreds of charts made with React, always with explanation and reproducible code"
         }
       />
 
