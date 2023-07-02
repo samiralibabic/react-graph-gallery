@@ -122,7 +122,7 @@ export default function Home() {
         charts representing a hierarchy like{" "}
         <Link href="/dendrogram">dendrograms</Link>,{" "}
         <Link href="/circular-packing">circle packing</Link>,{" "}
-        <Link href="/network-chart">networks</Link> and more. Please check the
+        <Link href="/network-graph">networks</Link> and more. Please check the
         dendrogram page where I explain it in detail.
       </p>
       <LinkAsButton isFilled size="sm" href="/dendrogram#hierarchy">

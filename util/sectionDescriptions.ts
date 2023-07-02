@@ -1,19 +1,121 @@
-export type ChartLogo = "DataArt2150" | "Violin150" | "Density150" | "Histogram150" | "Box1150" | "Joyplot150" | "ScatterPlot150" | "Heatmap150" | "Correlogram150" | "BubblePlot150" | "ScatterConnected150" | "Bar150" | "Spider150" | "Wordcloud150" | "Parallel1150" | "Lollipop150" | "CircularBarplot150" | "Tree150" | "Venn150" | "Doughnut150" | "Pie150" | "Dendrogram150" | "Voronoi150" | "CircularPacking150" | "Line150" | "Area150" | "StackedArea150" | "Stream150" | "Time150" | "Map150" | "Choropleth150" | "MapHexbin150" | "Cartogram150" | "ConnectedMap150" | "BubbleMap150" | "Chord150" | "Network150" | "Sankey150" | "Arc150" | "Bundle150" | "Colours150" | "Interactive150" | "Anim150" | "Cheat150" | "Bad150" | "3d150" | "2dDensity150"
+export type ChartLogo =
+  | "DataArt2150"
+  | "Violin150"
+  | "Density150"
+  | "Histogram150"
+  | "Box1150"
+  | "Joyplot150"
+  | "ScatterPlot150"
+  | "Heatmap150"
+  | "Correlogram150"
+  | "BubblePlot150"
+  | "ScatterConnected150"
+  | "Bar150"
+  | "Spider150"
+  | "Wordcloud150"
+  | "Parallel1150"
+  | "Lollipop150"
+  | "CircularBarplot150"
+  | "Tree150"
+  | "Venn150"
+  | "Doughnut150"
+  | "Pie150"
+  | "Dendrogram150"
+  | "Voronoi150"
+  | "CircularPacking150"
+  | "Line150"
+  | "Area150"
+  | "StackedArea150"
+  | "Stream150"
+  | "Time150"
+  | "Map150"
+  | "Choropleth150"
+  | "MapHexbin150"
+  | "Cartogram150"
+  | "ConnectedMap150"
+  | "BubbleMap150"
+  | "Chord150"
+  | "Network150"
+  | "Sankey150"
+  | "Arc150"
+  | "Bundle150"
+  | "Colours150"
+  | "Interactive150"
+  | "Anim150"
+  | "Cheat150"
+  | "Bad150"
+  | "3d150"
+  | "2dDensity150";
 
-export type ChartId = 'all' | "violin" | "density" | "histogram" | "boxplot" | "ridgeline" | "scatter" | "heatmap" | "correlogram" | "bubble" | "connectedScatter" | "density2d" | "barplot" | "radar" | "wordcloud" | "parallel" | "lollipop" | "circularBarplot" | "treemap" | "venn" | "donut" | "pie" | "dendrogram" | "voronoi" | "circularPacking" | "line" | "area" | "stackedArea" | "stream" | "timeseries" | "map" | "choropleth" | "hexbin" | "cartogram" | "connection" | "bubbleMap" | "chordDiagram" | "network" | "sankey" | "arc" | "edgeBundling" | "colors" | "plotly" | "animation" | "cheatSheets" | "caveats" | "3d"
+export type ChartId =
+  | "all"
+  | "violin"
+  | "density"
+  | "histogram"
+  | "boxplot"
+  | "ridgeline"
+  | "scatter"
+  | "heatmap"
+  | "correlogram"
+  | "bubble"
+  | "connectedScatter"
+  | "density2d"
+  | "barplot"
+  | "radar"
+  | "wordcloud"
+  | "parallel"
+  | "lollipop"
+  | "circularBarplot"
+  | "treemap"
+  | "venn"
+  | "donut"
+  | "pie"
+  | "dendrogram"
+  | "voronoi"
+  | "circularPacking"
+  | "line"
+  | "area"
+  | "stackedArea"
+  | "stream"
+  | "timeseries"
+  | "map"
+  | "choropleth"
+  | "hexbin"
+  | "cartogram"
+  | "connection"
+  | "bubbleMap"
+  | "chordDiagram"
+  | "network"
+  | "sankey"
+  | "arc"
+  | "edgeBundling"
+  | "colors"
+  | "plotly"
+  | "animation"
+  | "cheatSheets"
+  | "caveats"
+  | "3d";
 
-export type ChartFamily = "distribution" | "correlation" | "evolution" | "ranking" | "partOfAWhole" | "general" | "flow" | "map"
+export type ChartFamily =
+  | "distribution"
+  | "correlation"
+  | "evolution"
+  | "ranking"
+  | "partOfAWhole"
+  | "general"
+  | "flow"
+  | "map";
 
 export type ChartTypesInfo = {
-  id: ChartId,
-  family: ChartFamily,
-  logo: ChartLogo,
-  dataToVizURL: string,
-  reactURL: string,
-  d3URL: string,
-  label: string,
+  id: ChartId;
+  family: ChartFamily;
+  logo: ChartLogo;
+  dataToVizURL: string;
+  reactURL: string;
+  d3URL: string;
+  label: string;
   isAvailable: boolean;
-}
+};
 
 export const chartTypesInfo: ChartTypesInfo[] = [
   {
@@ -24,7 +126,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com",
     reactURL: "https://react-graph-gallery.com/all",
     label: "All charts",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "violin",
@@ -34,7 +136,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/violin",
     reactURL: "https://react-graph-gallery.com/violin-plot",
     label: "Violin",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "density",
@@ -44,7 +146,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/density",
     reactURL: "https://react-graph-gallery.com/density-plot",
     label: "Density",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "histogram",
@@ -54,7 +156,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/histogram",
     reactURL: "https://react-graph-gallery.com/histogram",
     label: "Histogram",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "boxplot",
@@ -64,7 +166,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.comt/boxplot",
     reactURL: "https://react-graph-gallery.com/boxplot",
     label: "Boxplot",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "ridgeline",
@@ -74,7 +176,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/ridgeline",
     reactURL: "https://react-graph-gallery.com/ridgeline",
     label: "Ridgeline",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "scatter",
@@ -84,7 +186,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/scatter",
     reactURL: "https://react-graph-gallery.com/scatter-plot",
     label: "Scatterplot",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "heatmap",
@@ -94,7 +196,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/heatmap",
     reactURL: "https://react-graph-gallery.com/heatmap",
     label: "Heatmap",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "correlogram",
@@ -104,7 +206,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/correlogram",
     reactURL: "https://react-graph-gallery.com/correlogram",
     label: "Correlogram",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "bubble",
@@ -114,7 +216,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/bubble",
     reactURL: "https://react-graph-gallery.com/bubble-plot",
     label: "Bubble",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "density2d",
@@ -124,7 +226,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/density2d",
     reactURL: "https://react-graph-gallery.com/2d-density-plot",
     label: "2D Density",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "connectedScatter",
@@ -134,7 +236,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/connectedscatter",
     reactURL: "https://react-graph-gallery.com/connected-scatter-plot",
     label: "Connected Scatter",
-    isAvailable: false
+    isAvailable: false,
   },
   {
     id: "barplot",
@@ -144,7 +246,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/barplot",
     reactURL: "https://react-graph-gallery.com/barplot",
     label: "Barplot",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "wordcloud",
@@ -154,7 +256,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/wordcloud",
     reactURL: "https://react-graph-gallery.com/wordcloud",
     label: "Wordcloud",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "parallel",
@@ -164,7 +266,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/parallel",
     reactURL: "https://react-graph-gallery.com/parallel-plot",
     label: "Parallel",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "lollipop",
@@ -174,7 +276,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/lollipop",
     reactURL: "https://react-graph-gallery.com/lollipop-plot",
     label: "Lollipop",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "circularBarplot",
@@ -184,7 +286,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/circularbarplot",
     reactURL: "https://react-graph-gallery.com/circular-barplot",
     label: "Circular Barplot",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "radar",
@@ -194,7 +296,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.comt/spider",
     reactURL: "https://react-graph-gallery.com/radar-chart",
     label: "Spider / Radar",
-    isAvailable: false
+    isAvailable: false,
   },
   {
     id: "treemap",
@@ -204,7 +306,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/treemap",
     reactURL: "https://react-graph-gallery.com/treemap",
     label: "Treemap",
-    isAvailable: true
+    isAvailable: true,
   },
   // {
   //   id: "venn",
@@ -224,7 +326,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://d3-graph-gallery.com/donut.html",
     reactURL: "https://react-graph-gallery.com/donut",
     label: "Donut",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "pie",
@@ -234,7 +336,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.comt/pie",
     reactURL: "https://react-graph-gallery.com/pie-plot",
     label: "Pie Chart",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "dendrogram",
@@ -244,7 +346,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/dendrogram",
     reactURL: "https://react-graph-gallery.com/dendrogram",
     label: "Dendrogram",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "voronoi",
@@ -254,7 +356,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com",
     reactURL: "https://react-graph-gallery.com/voronoi",
     label: "Voronoi",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "circularPacking",
@@ -264,7 +366,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/circularpacking",
     reactURL: "https://react-graph-gallery.com/circular-packing",
     label: "Circular Packing",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "line",
@@ -274,7 +376,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/line",
     reactURL: "https://react-graph-gallery.com/line-chart",
     label: "Line chart",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "area",
@@ -284,7 +386,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/area",
     reactURL: "https://react-graph-gallery.com/area-plot",
     label: "Area chart",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "stackedArea",
@@ -294,7 +396,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://d3-graph-gallery.com/stackedarea",
     reactURL: "https://react-graph-gallery.com/stacked-area-plot",
     label: "Stacked Area",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "stream",
@@ -304,7 +406,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/streamgraph",
     reactURL: "https://react-graph-gallery.com/streamchart",
     label: "Streamgraph",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "timeseries",
@@ -314,7 +416,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com",
     reactURL: "https://react-graph-gallery.com/timeseries",
     label: "Timeseries",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "map",
@@ -324,7 +426,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/map",
     reactURL: "https://react-graph-gallery.com/map",
     label: "Map",
-    isAvailable: false
+    isAvailable: false,
   },
   {
     id: "choropleth",
@@ -334,7 +436,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/choropleth",
     reactURL: "https://react-graph-gallery.com/choropleth-map",
     label: "Choropleth",
-    isAvailable: false
+    isAvailable: false,
   },
   {
     id: "hexbin",
@@ -344,7 +446,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/hexbinmap",
     reactURL: "https://react-graph-gallery.com/hexbin-map",
     label: "Hexbin",
-    isAvailable: false
+    isAvailable: false,
   },
   {
     id: "cartogram",
@@ -354,7 +456,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/cartogram",
     reactURL: "https://react-graph-gallery.com/cartogram",
     label: "Cartogram",
-    isAvailable: false
+    isAvailable: false,
   },
   {
     id: "connection",
@@ -364,7 +466,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/MapConnection",
     reactURL: "https://react-graph-gallery.com/connection-map",
     label: "Connection",
-    isAvailable: false
+    isAvailable: false,
   },
   {
     id: "bubbleMap",
@@ -374,7 +476,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/bubblemap",
     reactURL: "https://react-graph-gallery.com/bubble-map",
     label: "Bubble",
-    isAvailable: false
+    isAvailable: false,
   },
   {
     id: "chordDiagram",
@@ -384,7 +486,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/chord",
     reactURL: "https://react-graph-gallery.com/chord-diagram",
     label: "Chord Diagram",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "network",
@@ -392,9 +494,9 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     logo: "Network150",
     dataToVizURL: "https://www.data-to-viz.com/graph/network.html",
     d3URL: "https://www.d3-graph-gallery.com/network",
-    reactURL: "https://react-graph-gallery.com/network-chart",
+    reactURL: "https://react-graph-gallery.com/network-graph",
     label: "Network",
-    isAvailable: false
+    isAvailable: true,
   },
   {
     id: "sankey",
@@ -404,7 +506,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/sankey",
     reactURL: "https://react-graph-gallery.com/sankey-diagram",
     label: "Sankey",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "arc",
@@ -414,7 +516,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/arc",
     reactURL: "https://react-graph-gallery.com/arc-diagram",
     label: "Arc Diagram",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "edgeBundling",
@@ -424,7 +526,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "https://www.d3-graph-gallery.com/edge_bundling",
     reactURL: "https://react-graph-gallery.com/hierarchical-edge-bundling",
     label: "Edge Bundling",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "animation",
@@ -434,7 +536,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "",
     reactURL: "https://react-graph-gallery.com/animation",
     label: "Animation",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "plotly",
@@ -444,7 +546,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "",
     reactURL: "https://react-graph-gallery.com/interactivity",
     label: "Interactivity",
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: "caveats",
@@ -454,7 +556,7 @@ export const chartTypesInfo: ChartTypesInfo[] = [
     d3URL: "",
     reactURL: "https://www.data-to-viz.com/caveats.html",
     label: "Caveats",
-    isAvailable: true
+    isAvailable: true,
   },
   // {
   //   id: "colors",
@@ -487,4 +589,4 @@ export const chartTypesInfo: ChartTypesInfo[] = [
   //   label: "3D",
   //   isAvailable: false
   // },
-]
+];
